@@ -29,7 +29,9 @@ THE_OTHER_ANALYSTS = 'the_other_analysts'
 #########
 
 
-def rate_analysts_against_eachother(scoresheet_dataframe, analysts_to_rate, questions_to_rate_over, rating_aggregation_method=np.mean, analyst_id_column_name='analyst', subject_id_column_name='submission'):
+def rate_analysts_against_eachother(scoresheet_dataframe, analysts_to_rate, questions_to_rate_over,
+                                    rating_aggregation_method=np.mean, analyst_id_column_name='analyst',
+                                    subject_id_column_name='submission'):
 
     ''' This function is what you should use to determine the reliabilitiy of analysts over some questions, each compared to the rest
     
@@ -918,21 +920,11 @@ def _convert_df_from_questions_in_columns_to_rows(in_df, questions_to_include, s
     return result_df
 
 
-
-
-
-
-
-
-
-
-
 #########
 ### 
 ###   API TO GENERATE ANALYST RATIING COMBINATION FUNCTIONS
 ###
 #########
-
 
 
 def evaluate_analyst_reliabilities_and_create_combination_function(in_df, out_filename, reliability_calculation_to_do,
